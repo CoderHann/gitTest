@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenFramework"
-  s.version      = "0.0.1"
+  s.version      = "0.0.4"
   s.summary      = "this is an OpenFramework for ios development!"
 
   # This description is used to generate tags and improve search results.
@@ -132,5 +132,10 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  s.subspec 'Serialization' do |ss|
+    ss.source_files = 'OpenFramework/OpenFramework/moduleOne/**/*.{h,m}'
+    
+  end
 
 end
